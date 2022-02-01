@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfaz.plato.AgregarPlatoFragment">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="1286dp"
+        android:layout_height="800dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fondodetalleplato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnAgregarMateriales"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="452dp"
+        android:layout_marginTop="10dp"
+        android:background="#4A4A4A"
+        android:text="Agregar materiales"
+        android:textColor="#FBFAFA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="973dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="8dp"
+        android:background="#928A8A8A"
+        app:cardBackgroundColor="#88393838"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="350dp"
+                android:layout_height="244dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="#AE292828"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="cursive"
+                        android:text="Selecciona un estado"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spnestado"
+                        android:layout_width="325dp"
+                        android:layout_height="42dp"
+                        android:entries="@array/Spinner_estados"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="cursive"
+                        android:text="Descripción"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spnestado" />
+
+                    <EditText
+                        android:id="@+id/txtModDescripcion"
+                        android:layout_width="340dp"
+                        android:layout_height="80dp"
+                        android:backgroundTint="#FAF9F9"
+                        android:ems="10"
+                        android:fontFamily="cursive"
+                        android:inputType="textPersonName"
+                        android:textColor="#FAF8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="317dp"
+                android:layout_height="238dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="#AE292828"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView11"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="cursive"
+                        android:text="Selecciona una categoria"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="cursive"
+                        android:text="Nombre de plato"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spnModCategoria" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="cursive"
+                        android:text="Precio de plato"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtModnombrePlato" />
+
+                    <Spinner
+                        android:id="@+id/spnModCategoria"
+                        android:layout_width="297dp"
+                        android:layout_height="38dp"
+                        android:entries="@array/Spinner_items"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                    <EditText
+                        android:id="@+id/txtModnombrePlato"
+                        android:layout_width="303dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FAF7F7"
+                        android:ems="10"
+                        android:fontFamily="cursive"
+                        android:hint="Nombre del plato"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#F8F5F5"
+                        android:textColorHint="#F6F4F4"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                    <EditText
+                        android:id="@+id/txtModPrecionPlato"
+                        android:layout_width="302dp"
+                        android:layout_height="46dp"
+                        android:backgroundTint="#FAF7F7"
+                        android:ems="10"
+                        android:fontFamily="cursive"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="#F8F8F8"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnModificar"
+                style="@android:style/Widget.Holo.Light.Button.Inset"
+                android:layout_width="241dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="392dp"
+                android:background="#4A4A4A"
+                android:fontFamily="casual"
+                android:text="Modificar plato"
+                android:textColor="#FBFBFB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_width="214dp"
+                android:layout_height="224dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnModBuscarImagen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="238dp"
+                        android:layout_height="224dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imgModPlato"
+                            android:layout_width="245dp"
+                            android:layout_height="227dp"
+                            android:scaleType="centerCrop"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnModBuscarImagen"
+                android:layout_width="141dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="28dp"
+                android:background="#4A4A4A"
+                android:fontFamily="casual"
+                android:text="ELEGIR IMAGEN"
+                android:textColor="#FAF9F9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="454dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
+        android:shadowColor="#FDFBFB"
+        android:text="Modifica tu Plato"
+        android:textColor="#0E0E0E"
+        android:textColorHighlight="#FAFAFA"
+        android:textColorHint="#FAF9F9"
+        android:textSize="66sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="971dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D51C1C1C">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView4"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4A4A4A">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="29dp"
+                        android:text="Estado"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ScrollView
+                android:layout_width="972dp"
+                android:layout_height="148dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvMateriales"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="142dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4A4A4A">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="27dp"
+                        android:text="Modificar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="261dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4A4A4A">
+
+                    <TextView
+                        android:layout_width="76dp"
+                        android:layout_height="25dp"
+                        android:text="Producto"
+                        android:textColor="#FDFBFB"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="146dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4A4A4A">
+
+                    <TextView
+                        android:layout_width="76dp"
+                        android:layout_height="25dp"
+                        android:text="Cantidad"
+                        android:textColor="#FBFAFA"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="258dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4A4A4A">
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="23dp"
+                        android:text="Categoria"
+                        android:textColor="#F8F7F7"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

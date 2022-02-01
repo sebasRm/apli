@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00810202"
+    app:layoutDescription="@xml/fragment_platos_mesa_scene"
+    tools:context=".interfaz.pedido.PedidosFragment">
+
+
+    <fragment
+        android:id="@+id/fragment10"
+        android:name="com.example.myapplication.interfaz.plato.MenuPlatosFragment"
+        android:layout_width="778dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="780dp"
+        android:layout_height="750dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment10"
+         />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="732dp"
+        android:layout_height="491dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lista_pedidos"
+                android:layout_width="588dp"
+                android:layout_height="509dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="368dp"
+        android:layout_height="81dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4390F01">
+
+            <TextView
+                android:id="@+id/lblPrecioTotal"
+                android:layout_width="119dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#FAF7F7"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/precio"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lblPrecioTotal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="parent">
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4390F01">
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="94dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/iconomenudos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="MENU"
+                android:textColor="#FDFCFC"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="28dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="2dp"
+                android:background="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/arrow_up_float"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView37" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout24"
+        android:layout_width="246dp"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4390F01">
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="64dp"
+                android:layout_height="69dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView5"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout24">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/impresora"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/imagenCocina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#053380"
+                android:text="Cocina"
+                android:textColor="#F6F3F3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imagenFactura"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/imagenFactura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#053380"
+                android:text="Caja"
+                android:textColor="#F6F3F3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout25"
+        android:layout_width="215dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4390F01">
+
+            <TextView
+                android:id="@+id/numero_Mesa"
+                android:layout_width="187dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="8dp"
+                android:text="Número de mesa"
+                android:textColor="#FAF8F8"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnActualizarPedido"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/elimar1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

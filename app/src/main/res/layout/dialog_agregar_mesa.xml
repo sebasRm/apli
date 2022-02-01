@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="777dp"
+        android:layout_height="352dp"
+        android:background="#A4390F01"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/fmesa" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#63AA9696"
+                tools:layout_editor_absoluteX="-83dp"
+                tools:layout_editor_absoluteY="143dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="220dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/mesass000" />
+
+            <TextView
+                android:id="@+id/txtAgregarMesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="96dp"
+                android:background="#00FFFFFF"
+                android:shadowColor="#FAF8F8"
+                android:text="TextView"
+                android:textColor="#FBF9F9"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/botonSiAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="24dp"
+                android:background="#870303"
+                android:text="Si"
+                android:textColor="#FBF8F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/botonNoAgregar"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24"
+                app:layout_constraintVertical_bias="0.909" />
+
+            <Button
+                android:id="@+id/botonNoAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="144dp"
+                android:layout_marginBottom="24dp"
+                android:background="#870303"
+                android:text="No"
+                android:textColor="#F8F7F7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24"
+                app:layout_constraintVertical_bias="0.931" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
